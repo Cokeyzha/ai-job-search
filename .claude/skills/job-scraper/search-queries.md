@@ -194,7 +194,7 @@ When evaluating results, verify the job location is within reasonable commute di
 
 ## Date Filter
 
-Only include jobs posted within the last 14 days, or with an application deadline that has not yet passed. If a posting date cannot be determined, include it but flag as "date unknown".
+Only include jobs posted within the last 3 days, or with an application deadline that has not yet passed. If a posting date cannot be determined, include it but flag as "date unknown".
 
 ## Adapting Queries
 
