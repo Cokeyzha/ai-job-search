@@ -144,15 +144,18 @@ Target companies:
 99. athenahealth — Provider and revenue-cycle technology
 100. R1 RCM — Healthcare revenue-cycle technology
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Product Manager / Senior Product Manager
 
-These match your strongest and most desired career direction.
+Primary target roles — search these titles first, ahead of any adjacent/broader category.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
+site:[YOUR_JOB_BOARD] "Product Manager" [YOUR_CITY]
+site:[YOUR_JOB_BOARD] "Senior Product Manager" [YOUR_CITY]
+site:linkedin.com/jobs "Product Manager" United States
+site:linkedin.com/jobs "Senior Product Manager" United States
 ```
+
+Also apply these exact titles as the `-q`/`--query` value for the `linkedin-search` and `freehire-search` CLIs (see "Installed portal CLIs" above) — run one query for "Product Manager" and one for "Senior Product Manager" per portal.
 
 ### Priority 2: [YOUR_DOMAIN_EXPERTISE]
 
@@ -195,6 +198,15 @@ When evaluating results, verify the job location is within reasonable commute di
 ## Date Filter
 
 Only include jobs posted within the last 3 days, or with an application deadline that has not yet passed. If a posting date cannot be determined, include it but flag as "date unknown".
+
+## Company Exclusions
+
+Exclude any posting where the hiring company's **primary business** is one of the following, regardless of fit score — skip presenting these entirely rather than showing them as low-fit:
+
+- **Defense / military contracting** — companies whose core business is defense systems, weapons, military hardware, or contracting primarily with defense/intelligence agencies (signals: "defense", "military", "national security", "DoD", "classified", primary customer is a defense ministry/department).
+- **Cybersecurity** — companies whose core product/service is cybersecurity (signals: "cybersecurity", "infosec", "threat detection", "endpoint security", "SOC", "penetration testing" as the company's main offering — not to be confused with a company merely *hiring* a security-adjacent PM role as one team among many).
+
+When a company's primary business is ambiguous from the posting alone (e.g. a generalist enterprise vendor with one defense/security-adjacent business unit), use judgment based on the company's actual revenue focus — don't exclude a broad enterprise company just because the specific team is security-related, only exclude when defense/cybersecurity **is** the company's core business. If genuinely unsure, present the job but flag the ambiguity in the Title cell (e.g. "Product Manager (company has a defense/security business line — verify before applying)") rather than silently dropping or silently including it.
 
 ## Adapting Queries
 
